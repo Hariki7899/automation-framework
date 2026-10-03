@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import time
 
 #urls:
 home_page_url='https://www.automationexercise.com/'
@@ -10,7 +11,6 @@ home_navigation_button="//div[@class='shop-menu pull-right']/ul/li/a/i[@class='f
 category_title_text="//div[@class='left-sidebar']/h2/text()"
 category_women="(//div[@class='panel-heading']/h4/a)[1]"
 polo_brand="//div[@class='brands-name']/ul/li/a[text()='Polo']"
-
 
 #Test_cases
 def test_homepage_01():
