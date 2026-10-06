@@ -1,13 +1,28 @@
-Project name: Automation framework
+Automation Framework
 
-Purpose of project: Learning Automation framework setup
+Purpose:
+Learning and building an end-to-end SDET automation framework.
 
-Application under test: https://www.automationexercise.com/
+Application Under Test:
+Automation Exercise
 
-Current technology stack:
+Current Technology Stack:
+- Python
+- Selenium
+- PyTest
 
-Python
-Selenium
-PyTest
+Setup:
 
-Setup instructions
+1. Clone repository
+
+2. Create virtual environment
+   py -m venv .venv
+
+3. Activate virtual environment
+   .venv\Scripts\activate
+
+4. Install dependencies
+   python -m pip install -r requirements.txt
+
+5. Run tests
+   pytest

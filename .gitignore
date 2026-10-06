@@ -1,3 +1,4 @@
-.venv
-PyCharm-specific files
-Python cache files
+.venv/
+.idea/
+__pycache__/
+*.pyc
