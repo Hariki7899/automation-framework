@@ -26,3 +26,5 @@ Setup:
 
 5. Run tests
    pytest
+
+6. Conftest file - contains common fixture for driver setup and teardown which is used across the test cases.
