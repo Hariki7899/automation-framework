@@ -1,8 +1,5 @@
 from selenium.webdriver.common.by import By
 
-#urls:
-home_page_url = 'https://www.automationexercise.com/'
-
 #locators
 homepage_logo = "//div[@class='logo pull-left']/a/img"
 home_navigation_button = "//div[@class='shop-menu pull-right']/ul/li/a/i[@class='fa fa-home']"
@@ -13,8 +10,6 @@ polo_brand = "//div[@class='brands-name']/ul/li/a[text()='Polo']"
 
 #Test_cases
 def test_homepage_basic(driver):
-    driver.maximize_window()
-    driver.get(home_page_url)
     home_page_logo_element = driver.find_element(By.XPATH,homepage_logo)
     home_page_title_text = home_page_logo_element.get_attribute('alt')
     assert home_page_title_text == 'Website for automation practice'
@@ -22,8 +17,6 @@ def test_homepage_basic(driver):
     assert page_title == 'Automation Exercise'
 
 def test_category_section(driver):
-    driver.maximize_window()
-    driver.get(home_page_url)
     category_title_text = driver.find_element(By.XPATH,category_title).text
     assert category_title_text == 'CATEGORY'
     cate_list_elements = driver.find_elements(By.XPATH,category_list)
